@@ -12,10 +12,10 @@ export default function NavBar(){
                      className="inflex-flex items-center py-6 px-3 mr-6 text-white  text-5xl  cursive tracking-widest">
                         Hanadi
                     </NavLink>
-                    <NavLink to="/posts" className="inline-flex items-center py-3 px-3 my-6  text-2xl rounded text-white font-serif	">
+                    <NavLink to="/post" className="inline-flex items-center py-3 px-3 my-6  text-2xl rounded text-white font-serif	">
                         Blog Post
                     </NavLink>
-                    <NavLink to="/projects" className="inline-flex items-center py-3 px-3 my-6  text-2xl rounded text-white font-serif	">
+                    <NavLink to="/project" className="inline-flex items-center py-3 px-3 my-6  text-2xl rounded text-white font-serif	">
                         Projects
                     </NavLink>
                     <NavLink to="/about" className="inline-flex items-center py-3 px-3 my-6 text-2xl rounded text-white font-serif	">

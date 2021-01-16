@@ -24,13 +24,17 @@ export default {
                 list:[
                    { value:"personal",title:"Personal"},
                    { value:"client",title:"Client"},
-                   { value:"school",title:"School"},                  
+                   { value:"rbk",title:"RBK"},                  
 
                 ],
             },
         },
         {
             name:"link",
+            type:"url",
+        },
+        {
+            name:"link1",
             type:"url",
         },
         {

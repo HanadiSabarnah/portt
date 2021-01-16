@@ -1,6 +1,7 @@
 import React,{useEffect,useState} from "react"
 import { Link } from "react-router-dom";
 import sanityClient from "../client.js"
+import colorful from "../imagesa.jpg"
 
 
 export default function Post(){
@@ -25,7 +26,8 @@ export default function Post(){
         .catch(console.error)
     },[]);
     return (
-        <main className="bg-blue-100 min-h-screen p-12">
+        <main className="">
+            <img src={colorful} alt="Colorful Flower"  className="absolute h-full w-full"/>
            
             <section className="container mx-auto">
                 <h1 className="text-5xl flex justify-center cursive">Blog Posts Page</h1>
@@ -40,7 +42,7 @@ export default function Post(){
                             className="w-full h-full rounded-r object-cover absolute"
                             />
                             <span className="block relative h-full flex justify-end items-end pr-4 pb-4 ">
-                                <h3 className="text-gray-800 text-lg font-blog px-3 py-4 bg-red-700 text-red-100 bg-opacity-75 rounded">{post.title}</h3>
+                                <h3 className="text-gray-800 text-lg font-blog px-3 py-4 bg-blue-700 text-red-100 bg-opacity-75 rounded">{post.title}</h3>
                             </span>
                         </span>
                         </Link>

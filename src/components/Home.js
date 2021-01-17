@@ -1,6 +1,6 @@
 
 import image from "../hand-painted.jpg"
-import imagee from "../imagee.jpg"
+// import imagee from "../imagee.jpg"
 import React,{useEffect,useState} from "react"
 import sanityClient from "../client.js"
 import imageUrlBuilder from "@sanity/image-url"
@@ -27,6 +27,9 @@ export default function Home(){
         .then((data)=>setAuthor(data[0]))
         .catch(console.error)
     },[]);
+
+    if(!author) return <div>Loading....</div>
+  
     return (
         <main>
            

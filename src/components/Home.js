@@ -1,7 +1,32 @@
-import React from "react"
+
 import image from "../hand-painted.jpg"
 import imagee from "../imagee.jpg"
+import React,{useEffect,useState} from "react"
+import sanityClient from "../client.js"
+import imageUrlBuilder from "@sanity/image-url"
+
+import BlockContent from "@sanity/block-content-to-react"
+
+
+const builder = imageUrlBuilder(sanityClient)
+function urlFor(source){
+    return builder.image(source)
+}
 export default function Home(){
+    const [author,setAuthor] = useState(null)
+
+    useEffect(()=>{
+        sanityClient
+        .fetch(`
+        *[_type == "author"]{
+            name,
+            bio,            
+            "authorImage": image.asset->url
+                       
+        }`)
+        .then((data)=>setAuthor(data[0]))
+        .catch(console.error)
+    },[]);
     return (
         <main>
            
@@ -10,10 +35,10 @@ export default function Home(){
                 <section className="relative flex justify-center min-h-screen ">
                 <div class="sm:text-center lg:text-left">
                 <br/><br/>
-                <img class="w-52 h-52 rounded-full mx-auto" src={imagee} alt="" width="384" height="512"/>
+                <img class="w-52 h-52 rounded-full mx-auto" src={urlFor(author.authorImage).url()} alt="" width="384" height="512"/>
                 <br/><br/>
           <h1 class="text-8xl text-gray-900  font-bold text-center  lg-leading-snug ">
-            Hanadi Sabarnah
+          {author.name}
           </h1>
           <br/><br/>
           <p class="text-6xl text-gray-900 font-bold text-center lg-leading-snug">
@@ -21,7 +46,8 @@ export default function Home(){
           </p>
           <br/><br/>
           <p class="text-4xl text-gray-900 font-bold text-center lg-leading-snug">
-          "Have no fear of perfection, you’ll never reach it."
+          <BlockContent blocks={author.bio} projectId="9drzfsju" dataset="production" />
+          
           </p>
          
         </div>

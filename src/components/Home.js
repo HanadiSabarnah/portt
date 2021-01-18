@@ -1,9 +1,7 @@
 
 import image from "../hand-painted.jpg"
-// import Project  from "./Projects "
-import Posts from "./Posts"
-import About from "./About"
-import Projects from "./Projects"
+
+
 import React,{useEffect,useState} from "react"
 import sanityClient from "../client.js"
 import imageUrlBuilder from "@sanity/image-url"
@@ -66,12 +64,7 @@ export default function Home(){
       
       
             </section>
-            {/* <Project/>
-         <about/>
-         <posts/> */}
-         <Projects/>
-         <About/>
-         <Posts/>
+          
             </main>
 
             

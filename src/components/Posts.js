@@ -26,8 +26,8 @@ export default function Post(){
         .catch(console.error)
     },[]);
     return (
-        <main  className="relative my-8">
-            {/* <img src={colorful} alt="Colorful Flower"  className="absolute h-full w-full"/> */}
+        <main  className="">
+            <img src={colorful} alt="Colorful Flower"  className="bg-cover absolute object-cover w-full h-full"/>
            
             <section className="container mx-auto">
                 {/* <h1 className="text-5xl flex justify-center cursive">Blog Posts Page</h1> */}

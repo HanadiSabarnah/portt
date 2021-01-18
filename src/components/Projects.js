@@ -1,6 +1,6 @@
 import React,{useEffect,useState} from "react"
 import sanityClient from "../client.js"
-import colorful from "../beautifull.jpg"
+import colorful from "../beautiful.jpg"
 import imageUrlBuilder from "@sanity/image-url"
 
 const builder = imageUrlBuilder(sanityClient)
@@ -28,8 +28,8 @@ export default function Project(){
     },[]);
 
     return (
-        <main className="relative my-8">
-            {/* <img src={colorful} alt="Colorful Flower"  className="absolute h-full w-full"/> */}
+        <main className="relative ">
+            <img src={colorful} alt="Colorful Flower"  className="bg-cover absolute object-cover w-full h-full"/>
             <section className="container  mx-auto">
                 {/* <h1 className="text-5xl flex justify-center cursive">My Projects</h1> */}
                 <h2 className="text-5xl text-gray-600 flex justify-center mb-12">Welcome to my projects page</h2>

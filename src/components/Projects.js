@@ -46,7 +46,7 @@ export default function Project(){
                             rel="noopener noreferrer"
                             >{project.title}</a></h3>
                             <br/>
-        <img class="w-screen h-1/4" src={urlFor(project.projectImage).url()}  />
+        <img class="w-screen h-1/4" src={urlFor(project.projectImage).url()} alt="project.projectImage"  />
 
         <br/>
                         <div  className="text-grey-500  space-x-6">

@@ -35,12 +35,12 @@ export default function About(){
                 <section className="bg-blue-300 my-10 shadow-2xl lg:flex p-10">
                     <img src={urlFor(author.authorImage).url()} class="w-72 h-92  mx-auto" alt={author.name} />
                     <div className="  text-lg flex flex-col justify-center">
-                        <h1 className=" pl-10 font-mono text-5xl text-black-300 mb-4">
-                            Hey There. I'm{" "}
-                            <span className="text-black-100">{author.name}</span>
+                        <h1 className="text-5xl text-gray-600 flex justify-center mb-12">
+                        About Me
+                            {/* <span className="text-black-100">{author.name}</span> */}
                         </h1>
                         <div className=" pl-10  lg:prose-2xl text-black-300">
-                        <BlockContent blocks={author.bio} projectId="9drzfsju" dataset="production" />
+                        {/* <BlockContent blocks={author.bio} projectId="9drzfsju" dataset="production" /> */}
                         <p >As A software Developer , my objective is to make appositive impact on client, coworker, using my skills to design compelling and attractive websites.
 
 
@@ -53,7 +53,7 @@ export default function About(){
 </p>
                         </div>
                         <div className="font-sans text-center lg:prose-2xl text-black-300">
-                        <h3 className="text-gray-800 text-3xl font-bold mb-2 ">Contact</h3>
+                        <h3 className="text-gray-800 text-3xl font-bold mb-2 ">Contact Details</h3>
                         <a  target="_blank" rel="noopener noreferrer" className="text-red-500 font-bold hover:underline hover:text-red-400 text-xl">
                         <span role="img" aria-label="right pointer"> 📧 </span>  hsabarnah@gmail.com
                              

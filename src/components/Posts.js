@@ -26,12 +26,12 @@ export default function Post(){
         .catch(console.error)
     },[]);
     return (
-        <main className="">
-            <img src={colorful} alt="Colorful Flower"  className="absolute h-full w-full"/>
+        <main  className="relative my-8">
+            {/* <img src={colorful} alt="Colorful Flower"  className="absolute h-full w-full"/> */}
            
             <section className="container mx-auto">
-                <h1 className="text-5xl flex justify-center cursive">Blog Posts Page</h1>
-                <h2 className="text-lg text-gray-600 flex justify-center mb-12">Welcome to my page of blog posts</h2>
+                {/* <h1 className="text-5xl flex justify-center cursive">Blog Posts Page</h1> */}
+                <h2 className="text-5xl text-gray-600 flex justify-center mb-12">Welcome to my page of blog posts</h2>
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {postData && postData.map((post,index)=>(
                     <article>

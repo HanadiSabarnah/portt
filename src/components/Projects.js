@@ -28,16 +28,16 @@ export default function Project(){
     },[]);
 
     return (
-        <main className="relative">
-            <img src={colorful} alt="Colorful Flower"  className="absolute h-full w-full"/>
-            <section className="container mx-auto">
-                <h1 className="text-5xl flex justify-center cursive">My Projects</h1>
-                <h2 className="text-lg text-gray-600 flex justify-center mb-12">Welcome to my projects page</h2>
+        <main className="relative my-8">
+            {/* <img src={colorful} alt="Colorful Flower"  className="absolute h-full w-full"/> */}
+            <section className="container  mx-auto">
+                {/* <h1 className="text-5xl flex justify-center cursive">My Projects</h1> */}
+                <h2 className="text-5xl text-gray-600 flex justify-center mb-12">Welcome to my projects page</h2>
                 <section className="grid grid-cols-3 gap-10">
                 {projectData && projectData.map((project,index)=>(
             
         
-                    <article className="relative rounded-lg shadow-sm bg-blue-300 p-10">
+                    <article className="relative  rounded-lg shadow-sm bg-blue-300 p-10">
                         <h3 className="text-gray-800 text-3xl font-bold mb-2 hover:text-red-700">
                             <a 
                             href={project.link}

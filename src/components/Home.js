@@ -1,9 +1,13 @@
 
 import image from "../hand-painted.jpg"
-// import projects from "/imagee.jpg"
+// import Project  from "./Projects "
+import Posts from "./Posts"
+import About from "./About"
+import Projects from "./Projects"
 import React,{useEffect,useState} from "react"
 import sanityClient from "../client.js"
 import imageUrlBuilder from "@sanity/image-url"
+
 
 import BlockContent from "@sanity/block-content-to-react"
 
@@ -32,7 +36,8 @@ export default function Home(){
   
 
     return (
-        <main className="relative">
+      
+        <main className="">
            
             <img src={image} alt="Colorful Garden" className=" bg-cover absolute object-cover w-full h-full"/>
 
@@ -56,13 +61,24 @@ export default function Home(){
          
         </div>
       
-      <projects/>
+      
               
       
       
             </section>
+            {/* <Project/>
+         <about/>
+         <posts/> */}
+         <Projects/>
+         <About/>
+         <Posts/>
+            </main>
+
+            
              
-         </main>
+        
+        
+        
     
       
   

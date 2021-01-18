@@ -9,9 +9,12 @@ export default {
         },
         {
             name: 'mainImage',
-     
-      type: 'image',
-        },
+            title: 'Main image',
+            type: 'image',
+            options: {
+              hotspot: true,
+            },
+          },
         {
             name:"date",
             type:"datetime",

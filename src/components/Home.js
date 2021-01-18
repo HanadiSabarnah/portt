@@ -42,7 +42,7 @@ export default function Home(){
                 <section className="relative flex justify-center min-h-screen ">
                 <div class="sm:text-center lg:text-left my-20">
                 {/* <br/><br/>
-                <img class="w-52 h-52 rounded-full mx-auto" src={urlFor(author.authorImage).url()} alt="" width="384" height="512"/> */}
+                <img class="w-52 h-52 rounded-full mx-auto" src={urlFor(author.authorImage).url()} alt={author.name} width="384" height="512"/> */}
                
           <h1 class="text-8xl text-gray-900  font-bold text-center  lg-leading-snug ">
           {author.name}

@@ -54,14 +54,14 @@ export default function About(){
                         </div>
                         <div className="font-sans text-center lg:prose-2xl text-black-300">
                         <h3 className="text-gray-800 text-3xl font-bold mb-2 ">Contact Details</h3>
-                        <a  target="_blank" rel="noopener noreferrer" className="text-red-500 font-bold hover:underline hover:text-red-400 text-xl">
-                        <span role="img" aria-label="right pointer"> 📧 </span>  hsabarnah@gmail.com
+                        
+                        <span className="text-red-500 font-bold hover:underline hover:text-red-400 text-xl" role="img" aria-label="right pointer"> 📧 </span>  hsabarnah@gmail.com
                              
-                            </a>
-                            <a target="_blank" rel="noopener noreferrer" className="text-red-500 font-bold hover:underline hover:text-red-400 text-xl">
-                            <span role="img" aria-label="right pointer">  📞 </span>  00970 597621673
                             
-                            </a>
+                            
+                            <span  className="text-red-500 font-bold hover:underline hover:text-red-400 text-xl"role="img" aria-label="right pointer">  📞 </span>  00970 597621673
+                            
+                            
                             <a href="https://drive.google.com/file/d/1iN5QKkstuxL-5Z1q3a2PN_eMRi2tP_uZ/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="text-red-500 font-bold hover:underline hover:text-red-400 text-xl">
                             <span role="img" aria-label="right pointer"> 📜 </span>  Resume
                              

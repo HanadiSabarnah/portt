@@ -8,6 +8,11 @@ export default {
             type:"string",
         },
         {
+            name: 'mainImage',
+     
+      type: 'image',
+        },
+        {
             name:"date",
             type:"datetime",
         },

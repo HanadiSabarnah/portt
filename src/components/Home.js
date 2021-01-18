@@ -30,6 +30,7 @@ export default function Home(){
 
     if(!author) return <div>Loading....</div>
   
+    
     return (
         <main>
            

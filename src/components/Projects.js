@@ -14,7 +14,15 @@ export default function Project(){
             projectType,
             link,
             link1,
-            tags                   
+            tags ,
+            mainImage{
+                asset->{
+                    _id,
+                    url
+                },
+                alt
+
+            }                  
                        
         }`)
         .then((data)=>setProjectData(data))
@@ -40,7 +48,7 @@ export default function Project(){
                             rel="noopener noreferrer"
                             >{project.title}</a></h3>
                             <br/>
-        <img class="w-full" src="https://tailwindcss.com/img/card-top.jpg" alt="Sunset in the mountains"/>
+        <img class="w-full" src={project.mainImage.asset.url} alt="Sunset in the mountains"/>
 
         <br/>
                         <div  className="text-grey-500  space-x-6">

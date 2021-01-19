@@ -1,5 +1,6 @@
 
 import image from "../hand-painted.jpg"
+import {Link} from "react-router-dom";
 
 
 import React,{useEffect,useState} from "react"
@@ -56,6 +57,14 @@ export default function Home(){
           <BlockContent blocks={author.bio} projectId="9drzfsju" dataset="production" />
           
           </p>
+          <br/><br/>
+          <div class="flex justify-center">
+          <Link  to="/about" class="bg-blue-500 text-3xl rounded-full font-bold text-black px-6 py-4 transition duration-300 ease-in-out hover:bg-blue-600 mr-6">
+          Contact me
+        </Link> 
+          
+</div>
+         
          
         </div>
       

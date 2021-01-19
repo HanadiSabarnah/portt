@@ -57,6 +57,7 @@ export default function NavBar(){
     <div className="inline-flex ">
                     <SocialIcon url="https://github.com/HanadiSabarnah?tab=repositories" className="mr-4" target="_blank" fgColor="#fff" style={{height:35,width:35}}/>
                     <SocialIcon url="https://www.linkedin.com/in/hanadi-sabarnah-a477971b6/" className="mr-4" target="_blank" fgColor="#fff" style={{height:35,width:35}}/>
+                    
            
                 </div>
     

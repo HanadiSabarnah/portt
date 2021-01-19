@@ -58,13 +58,16 @@ export default function Project(){
                              
                             <p className="my-6 text-4sl font-semibold text-gray-900  text-justify text-lg leading-relaxed">{project.description}</p>
                             
-                            <a href={project.link} target="_blank" rel="noopener noreferrer" className="text-red-500 font-bold hover:underline hover:text-red-400 text-xl">
+                            <a href={project.link} target="_blank" rel="noopener noreferrer" class="bg-blue-500 rounded-lg font-bold text-black text-center px-4 py-3 transition duration-300 ease-in-out hover:bg-blue-600 mr-6">
                                 View Source Code{" "}
-                            <span role="img" aria-label="right pointer"> 👉 </span>  
-                            </a><br/>
-                            <a href={project.link1} target="_blank" rel="noopener noreferrer" className="text-red-500 font-bold hover:underline hover:text-red-400 text-xl">
+                             
+                            </a><br/><br/><br/>
+                            <a href={project.link1} target="_blank" rel="noopener noreferrer" class="bg-blue-500 rounded-lg font-bold text-black text-center px-4 py-3 transition duration-300 ease-in-out hover:bg-blue-600 mr-6">
                                 View Demo{" "}
-                            <span role="img" aria-label="right pointer">  👉 </span>  
+
+                                
+
+ 
                             </a>
 
                             

@@ -52,7 +52,7 @@ export default function About(){
                              
                             
                             
-                            <span  className="pl-10  lg:prose-xl text-black-300"role="img" aria-label="right pointer">  Phone No. +972 5 597621673</span> 
+                            <span  className="pl-10  lg:prose-xl text-black-300"role="img" aria-label="right pointer">  Phone No. +972  597621673</span> 
                             <br/>  
                             
                             

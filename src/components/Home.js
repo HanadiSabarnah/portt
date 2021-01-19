@@ -40,7 +40,7 @@ export default function Home(){
            
             <img src={image} alt="Colorful Garden" className=" bg-cover absolute object-cover w-full h-full"/>
 
-                <section className="relative  min-h-screen p-12  justify-center  ">
+                <section className="relative flex min-h-screen p-12  justify-center  ">
                 <div class="sm:text-center lg:text-left my-20">
                 {/* <br/><br/>
                 <img class="w-52 h-52 rounded-full mx-auto" src={urlFor(author.authorImage).url()} alt={author.name} width="384" height="512"/> */}
